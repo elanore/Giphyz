@@ -21,12 +21,12 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div>
-      <div className="bg-black flex flex-wrap justify-center">
+    <div data-testid="home">
+      <div className="flex flex-wrap justify-center">
         <Search searchData={fetchData} />
         <div className="my-auto">
           <button
-            className="rounded-lg bg-gray-300 p-2 m-2"
+            className="rounded-lg bg-gray-100 p-3 m-3"
             data-testid="trendingBtn"
             onClick={() => {
               navigate("/trending");
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
             <div
               key={id}
               data-testid={`search-img`}
-              className="m-4 p-4 w-[250px] rounded-lg bg-cyan-200"
+              className="m-4 p-4 w-[250px] rounded-lg bg-gray-200"
             >
               <img src={url} alt={title} />
             </div>

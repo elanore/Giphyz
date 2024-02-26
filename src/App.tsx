@@ -4,9 +4,9 @@ import { Link, Outlet } from "react-router-dom";
 
 const App: React.FC = () => {
   return (
-    <div className="App text-4xl font-bold text-cyan-600 text-center h-screen bg-black p-4">
+    <div className="App h-full min-h-screen bg-blue-300 text-4xl font-bold text-blue-900 text-center p-4">
       <Link to="/" data-testid="gifs">
-        GIFz
+        <h1 className="no-underline">GIFz</h1>
       </Link>
       <Outlet />
     </div>
