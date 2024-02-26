@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     const queryParam = searchKey ? `&q=${searchKey}` : "";
     try {
       const response = await fetch(
-        `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=10${queryParam}`
+        `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=20${queryParam}`
       );
       const jsonData = await response.json();
       setGiphyList(jsonData.data);
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         <Search searchData={fetchData} />
         <div className="my-auto">
           <button
-            className="rounded-lg bg-gray-100 p-3 m-3"
+            className="rounded-lg bg-white p-3 m-3 outline outline-offset-2 outline-stone-500 "
             data-testid="trendingBtn"
             onClick={() => {
               navigate("/trending");

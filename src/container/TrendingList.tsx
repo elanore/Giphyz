@@ -7,7 +7,7 @@ const TrendingList = () => {
   const fetchData = async () => {
     let APIKEY = "lflyzKL8Q7Nv1MdqW4hmUmPfYKFBgKI9";
     const response = await fetch(
-      `https://api.giphy.com/v1/gifs/trending?api_key=${APIKEY}&limit=10`
+      `https://api.giphy.com/v1/gifs/trending?api_key=${APIKEY}&limit=20`
     );
     const jsonData = await response.json();
     setGiphyList(jsonData.data);

@@ -1,7 +1,11 @@
 
 # Installation 
 - clone the repo from git hub : https://github.com/elanore/Giphyz
+# prerequisite
+- node version > 16.15.0
+- npm version > 8.5.5
 - installation - npm install 
+
 
 # start the app
 

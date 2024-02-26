@@ -10,7 +10,7 @@ const Search: React.FC<Props> = ({ searchData }) => {
   return (
     <div className="p-6 m-6 text-center relative" data-testid="search">
       <input
-        className="text-wrap text-lg rounded-lg p-4 m-2 w-80"
+        className="text-wrap text-lg rounded-lg p-4 m-2 w-80 outline outline-offset-2 outline-stone-500 "
         data-testid="searchbox"
         type="text"
         placeholder="Enter keyword"
