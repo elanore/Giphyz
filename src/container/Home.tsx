@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         <Search searchData={fetchData} />
         <div className="my-auto">
           <button
-            className="rounded-lg bg-white p-3 m-3 outline outline-offset-2 outline-stone-500"
+            className="rounded-lg bg-white p-3 m-3 outline outline-offset-2 outline-stone-500 dark:bg-stone-500 dark:text-white"
             data-testid="trendingBtn"
             onClick={() => {
               navigate("/trending");
