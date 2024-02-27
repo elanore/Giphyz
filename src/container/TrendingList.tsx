@@ -27,7 +27,7 @@ const TrendingList = () => {
             <div
               key={id}
               data-testid="trending-img"
-              className="m-4 p-4 w-[250px] rounded-lg bg-gray-200"
+              className="m-4 p-4 w-[250px] rounded-lg bg-stone-200 dark:bg-teal-300"
             >
               <img src={url} alt={title} />
             </div>

@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         <Search searchData={fetchData} />
         <div className="my-auto">
           <button
-            className="rounded-lg bg-white p-3 m-3 outline outline-offset-2 outline-stone-500 "
+            className="rounded-lg bg-white p-3 m-3 outline outline-offset-2 outline-stone-500"
             data-testid="trendingBtn"
             onClick={() => {
               navigate("/trending");
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
             <div
               key={id}
               data-testid={`search-img`}
-              className="m-4 p-4 w-[250px] rounded-lg bg-gray-200"
+              className="m-4 p-4 w-[250px] rounded-lg bg-stone-200 dark:bg-teal-300"
             >
               <img src={url} alt={title} />
             </div>
